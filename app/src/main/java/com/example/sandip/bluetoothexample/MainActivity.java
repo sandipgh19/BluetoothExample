@@ -1,6 +1,6 @@
 package com.example.sandip.bluetoothexample;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import java.io.IOException;
 import java.io.InputStream;
@@ -30,7 +30,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private static int DISCOVERY_REQUEST = 1;
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         aa = new ArrayAdapter<BluetoothDevice>(this,
                 android.R.layout.simple_list_item_1,
                 foundDevices);
-        list = (ListView)findViewById(R.id.list_discovered);
+        list = (ListView)findViewById(R.id.discovered);
         list.setAdapter(aa);
 
         list.setOnItemClickListener(new OnItemClickListener() {

@@ -4,7 +4,6 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-
     <EditText
         android:id="@+id/text_message"
         android:layout_width="fill_parent"
@@ -28,12 +27,11 @@
         />
 
     <ListView
-        android:id="@+id/list_discovered"
+        android:id="@+id/discovered"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
         android:layout_above="@id/button_listen"
-        android:layout_alignParentTop="true"
-        />
+        android:layout_alignParentTop="true"/>
     <TextView
         android:id="@+id/text_messages"
         android:layout_width="fill_parent"
